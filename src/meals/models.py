@@ -12,6 +12,7 @@ class Meals(models.Model):
     preperation_time =models.IntegerField()
     image = models.ImageField(upload_to='meals/')
     slug = models.SlugField(blank=True, null=True)
+    
 
 
     def save(self , *args , **kwargs):
@@ -22,8 +23,8 @@ class Meals(models.Model):
 
 
     class Meta:
-        verbose_name = 'meal'
-        verbose_name_plural = 'meals'
+        verbose_name = 'platillo'
+        verbose_name_plural = 'platillos'
 
 
     def __str__(self):
@@ -35,8 +36,8 @@ class Category(models.Model):
 
 
     class Meta:
-        verbose_name = 'category'
-        verbose_name_plural = 'categories'
+        verbose_name = 'categoria'
+        verbose_name_plural = 'categorias'
 
     def __str__(self):
         return self.name

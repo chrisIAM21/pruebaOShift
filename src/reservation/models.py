@@ -9,6 +9,10 @@ class Reservation(models.Model):
     numero_de_personas = models.IntegerField()
     fecha = models.DateField()
     hora = models.TimeField()
+    
+    class Meta:
+        verbose_name = 'reservacion'
+        verbose_name_plural = 'reservaciones'
 
 
     def __str__(self):

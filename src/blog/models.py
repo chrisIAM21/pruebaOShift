@@ -17,8 +17,8 @@ class Post(models.Model):
 
 
     class Meta:
-        verbose_name = ' post'
-        verbose_name_plural = 'posts'
+        verbose_name = 'Sitio'
+        verbose_name_plural = 'Sitio'
 
     def __str__(self):
         return self.title
@@ -30,8 +30,8 @@ class Category(models.Model):
 
 
     class Meta:
-        verbose_name = ' category'
-        verbose_name_plural = 'catogires'
+        verbose_name = ' categoria'
+        verbose_name_plural = 'categorias'
 
     def __str__(self):
         return self.category_name
@@ -44,6 +44,9 @@ class Comment(models.Model):
     content = models.TextField()
     created = models.DateTimeField(default=timezone.now)
 
-
+    class Meta:
+        verbose_name = 'Comentario'
+        verbose_name_plural = 'Comentarios'
+        
     def __str__(self):
         return str(self.content)
