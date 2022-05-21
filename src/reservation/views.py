@@ -1,5 +1,5 @@
 from .models import Reservation
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from .forms import ReserveTableForm
 
 from reservation.models import Reservation
@@ -12,7 +12,7 @@ def reserve_table(request):
 
         if reserve_form.is_valid():
             reserve_form.save()
-
+            return redirect('qr:qr_list')
     context = {'form' : reserve_form}
 
     return render(request , 'Reservation/reservation.html' , context)

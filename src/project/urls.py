@@ -28,6 +28,7 @@ urlpatterns = [
     path('about-us/' , include('aboutus.urls' , namespace='aboutus')),
     path('reserve_table/' , include('reservation.urls' , namespace='reservation')),
     path('' , include('home.urls' , namespace='home')),
+    path('qr/', include('qr.urls' , namespace='qr')),
     
 ]
 
