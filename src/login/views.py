@@ -28,7 +28,3 @@ def user_login(request):
                 return render(request,'login.html',context)
 
         return render(request,'login/login.html',context)
-
-def user_logout(request):
-    logout(request)
-    return redirect('/')

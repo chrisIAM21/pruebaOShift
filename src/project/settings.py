@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'qr',
     'register',
     'login',
+    'logout',
 ]
 
 MIDDLEWARE = [

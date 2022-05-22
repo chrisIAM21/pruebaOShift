@@ -56,10 +56,13 @@
               <div class="col-5 col-md-3 text-right menu-burger-wrap">
                 <a href="#" class="site-nav-toggle js-site-nav-toggle"><i></i></a>
               </div>
+              <div class="col-5 col-md-20 text-center">
+                <a class="btn btn-primary" href="{% url 'logout:logout' %}" role="button">Cerrar sesion</a>
+              </div>
             {% else %}
               <div class="col-5 col-md-20 text-center">
-                <a class="btn btn-primary" href="{% url 'register:register' %}" role="button">Registro</a>
-                <a class="btn btn-primary" href="{% url 'login:login' %}" role="button">Login</a>
+                <a class="btn btn-primary" href="{% url 'register:register' %}" role="button">Registrarse</a>
+                <a class="btn btn-primary" href="{% url 'login:login' %}" role="button">Iniciar Sesion</a>
               </div>
             {% endif %}
           

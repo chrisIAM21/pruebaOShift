@@ -31,6 +31,7 @@ urlpatterns = [
     path('qr/', include('qr.urls' , namespace='qr')),
     path('register/', include('register.urls' , namespace='register')),
     path('login/', include('login.urls' , namespace='login')),
+    path('logout/', include('logout.urls' , namespace='logout')),
     
 ]
 
