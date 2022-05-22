@@ -29,6 +29,8 @@ urlpatterns = [
     path('reserve_table/' , include('reservation.urls' , namespace='reservation')),
     path('' , include('home.urls' , namespace='home')),
     path('qr/', include('qr.urls' , namespace='qr')),
+    path('register/', include('register.urls' , namespace='register')),
+    path('login/', include('login.urls' , namespace='login')),
     
 ]
 
