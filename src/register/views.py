@@ -24,7 +24,7 @@ def register(request):
                 client.user = user
                 client.save()
                 username = form.cleaned_data.get('username')
-                messages.success(request,"Cuenta creada para exitosamente para " + username)
+                messages.success(request,"Cuenta creada exitosamente para " + username)
                 return redirect('/')
 
         context = {'form':form}
