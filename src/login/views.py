@@ -22,9 +22,9 @@ def user_login(request):
                     return redirect('/')
                 except:
                     messages.success(request,"Ha ocurrido un error, intenta de nuevo")
-                    return render(request,'login.html',context)
+                    return render(request,'login/login.html',context)
             else:
                 messages.success(request,"Usuario no registrado")
-                return render(request,'login.html',context)
+                return render(request,'login/login.html',context)
 
         return render(request,'login/login.html',context)
